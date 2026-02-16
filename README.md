@@ -2,7 +2,7 @@
 
 Projekt prezentuje prosty tor telemetrii lotu:
 
-1. `STM32 Nucleo-F334R8` odczytuje dane z czujnikow (BMP180 + MPU6050).
+1. `STM32 Nucleo-F334R8` odczytuje dane z czujnikow umieszczonych na GY-87 (BMP180 + MPU6050).
 2. Firmware wysyla ramki telemetryczne przez UART (Virtual COM przez ST-Link).
 3. Aplikacja `arthor.py` odczytuje COM i wizualizuje dane (sztuczny horyzont, yaw, wartosci baro/IMU).
 
