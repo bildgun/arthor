@@ -6,6 +6,8 @@ Projekt prezentuje prosty tor telemetrii lotu:
 2. Firmware wysyla ramki telemetryczne przez UART (Virtual COM przez ST-Link).
 3. Aplikacja `arthor.py` odczytuje COM i wizualizuje dane (sztuczny horyzont, yaw, wartosci baro/IMU).
 
+![Arthor demo](adz.gif)
+
 ## Co robi firmware
 
 Plik: `Core/Src/main.c`
@@ -82,6 +84,8 @@ The project presents a simple flight telemetry track:
 2. The firmware sends telemetry frames via UART (Virtual COM via ST-Link).
 3. The `arthor.py` application reads COM and visualizes the data (artificial horizon, yaw, baro/IMU values).
 
+![Arthor demo](adz.gif)
+
 ## What the firmware does
 
 File: `Core/Src/main.c`
@@ -149,3 +153,4 @@ python arthor.py
 
 - `Core/Src/main.c` - main firmware logic and telemetry transmission
 - `arthor.py` - desktop application (main GUI file)
+
