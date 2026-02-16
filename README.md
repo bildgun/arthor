@@ -1,6 +1,6 @@
 # Arthor Telemetry (STM32 Nucleo F334R8 + Python GUI)
 
-Projekt prezentuje prosty tor telemetrii lotu:
+Projekt prezentuje tor telemetrii lotu:
 
 1. `STM32 Nucleo-F334R8` odczytuje dane z czujnikow umieszczonych na GY-87 (BMP180 + MPU6050).
 2. Firmware wysyla ramki telemetryczne przez UART (Virtual COM przez ST-Link).
@@ -21,7 +21,7 @@ Plik: `Core/Src/main.c`
   - obliczenia `Roll`, `Pitch`, `Yaw` (filtr komplementarny)
 - Wysylka danych przez UART2 (`9600`, `8N1`) w formacie tekstowym.
 
-Format ramki (zgodny z `sprintf` w `main.c`):
+Format ramki:
 
 ```text
 [BARO] T:%d.%dC P:%dPa A:%d.%dm | [ATT] R:%d.%d P:%d.%d Y:%d.%d
@@ -46,6 +46,8 @@ Przyklad:
 
 - STM32 Nucleo-F334R8
 - Czujniki:
+  - GY-87 (preferable I2C) 
+  albo:
   - BMP180 (I2C)
   - MPU6050 (I2C)
 - Python 3.10+ (zalecane)
@@ -99,7 +101,7 @@ File: `Core/Src/main.c`
   - `Roll`, `Pitch`, `Yaw` calculations (complementary filter)
 - Data transmission via UART2 (`9600`, `8N1`) in text format.
 
-Frame format (compatible with `sprintf` in `main.c`):
+Frame format:
 
 ```text
 [BARO] T:%d.%dC P:%dPa A:%d.%dm | [ATT] R:%d.%d P:%d.%d Y:%d.%d
@@ -124,6 +126,8 @@ arthor.py is the main file of the desktop application. The program:
 
 - STM32 Nucleo-F334R8
 - Sensors:
+  - GY-87 (preferable I2C) 
+  or:
   - BMP180 (I2C)
   - MPU6050 (I2C)
 - Python 3.10+ (recommended)
