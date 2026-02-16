@@ -50,6 +50,7 @@ Przyklad:
   albo:
   - BMP180 (I2C)
   - MPU6050 (I2C)
+- [ST-Link USB Drivers](https://www.st.com/en/development-tools/stsw-link009.html)
 - Python 3.10+ (zalecane)
 - Biblioteki Python:
   - `pyserial`
@@ -131,6 +132,7 @@ arthor.py is the main file of the desktop application. The program:
   - BMP180 (I2C)
   - MPU6050 (I2C)
 - Python 3.10+ (recommended)
+- [ST-Link USB Drivers](https://www.st.com/en/development-tools/stsw-link009.html)
 - Python libraries:
   - `pyserial`
   - `PyQt5`
