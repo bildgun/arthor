@@ -74,7 +74,7 @@ python arthor.py
 - `Core/Src/main.c` - glowna logika firmware i wysylka telemetrii
 - `arthor.py` - aplikacja desktopowa (glowny plik GUI)
 
-EN:
+# EN: Arthor Telemetry (STM32 Nucleo F334R8 + Python GUI)
 
 The project presents a simple flight telemetry track:
 
